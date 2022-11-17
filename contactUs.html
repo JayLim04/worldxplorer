@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: #ecae7d;
+    }
+
+    .navbar {
+        background-color: black;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container-body {
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .form {
+        border-right: 50px;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        h1 {
+            font-size: 7vw;
+            margin-top: 4vw;
+            margin-bottom: 3vw;
+
+            width: 100%;
+            text-align: center;
+        }
+
+        .navbar {
+            background: black;
+            width: 100%;
+            text-align: center;
+            font-size: 4vw;
+        }
+
+        .navbar a {
+            display: inline-block;
+        }
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="svg">
+                <!-- Svg -->
+                <svg version="1.1" id="Layer_1">
+                    <image style="overflow:visible" ; width="20vw" height="20vh" xlink:href="WX.svg"></image>
+                </svg>
+            </div>
+            <div class="bar">
+                <a href="index.html">Home</a> |
+
+                <div class="dropdown">
+                    <button class="dropbtn">Package Tours
+
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                |
+                <a>Rediscover Singapore</a> |
+                <a href="cruises.html">Cruises</a> |
+                <a>Contact Us</a>
+
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="container">
+        <form>
+            <p>Enter your email<br></p>
+            </p>
+            <input type="email" name=Email>
+            <br>
+            <p>Enter your name<br></p>
+            <input type="text" name=Name><br>
+            <p>Enter the Subject</p><br>
+            <textarea name="Subject"></textarea><br>
+            <p>Enter your message here</p><br>
+            <textarea name="Message" rows="4" cols="50"></textarea><br>
+            <input type="submit" name="Send email">
+
+
+        </form>
+        <div class="container-body">
+            <h3>Get in touch with us!</h3>
+            <a>
+                You can call us at <b>+65 6432 1987</b> <br>
+
+                Email us at <b>worldXplorer@world.com</b>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <svg version="1.1" id="Layer_1">
+            <image style="overflow:visible" ; width="190px" height="190px" xlink:href="WX.svg"></image>
+        </svg>
+        <p>Copyright 2022 WX Company - All Rights Reserved. Privacy | Terms | Feedback | Support</p>
+    </footer>
+</body>
+
+</html>

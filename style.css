@@ -1,0 +1,169 @@
+.vid {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 0px;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+
+.vid video {
+  min-height: 100%;
+  min-width: 100%;
+  bottom: 0;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 35px;
+  background: rgba(0, 0, 0, 0.7)
+}
+
+body {
+  font-family: "Trirong", serif;
+  margin: 0;
+  padding: 0;
+}
+
+a:visited {
+  color: #ed6335;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  padding-bottom: 100px;
+  margin-top: 300px;
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  position: relative;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  font-size: 20px;
+  backdrop-filter: blur(10px);
+  transition: transform .2s;
+}
+
+.card:hover {
+  backdrop-filter: blur(2px);
+  box-shadow: 2px 2px 10px grey;
+  transform: scale(1.1);
+  z-index: 99999;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+  color: #ecae7d;
+  font-size: 100px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 15px;
+  background: black;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  vertical-align: top;
+
+}
+
+.bar {
+  padding-left: 420x;
+  align-items: right;
+  float: inline-end;
+}
+
+
+.svg {
+  width: 200px;
+  height: 120px;
+
+}
+
+.svg:hover {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dropbtn {
+  color: #ed6335;
+  font: inherit;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: ed6335;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
